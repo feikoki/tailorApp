@@ -1,0 +1,8 @@
+{
+  "name": "TailorApp",
+  "app_id": "571f4e2c",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
