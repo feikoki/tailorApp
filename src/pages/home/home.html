@@ -1,14 +1,25 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+    <ion-navbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-3>
+            <ion-icon name="menu"></ion-icon>
+          </ion-col>
+          <ion-col col-3>
+            <ion-icon name="pricetag"></ion-icon>
+          </ion-col>
+          <ion-col col-5>
+              <ion-icon name="search"></ion-icon>
+          </ion-col>
+          <ion-col col-1>
+              <ion-icon name="person"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-navbar>
+  </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  
+  <button ion-button (click)="openModal()">Add This Item</button>
 </ion-content>
