@@ -8,6 +8,9 @@
 
   <ion-navbar>
     <ion-title>Add to My Wish List</ion-title>
+    <ion-buttons end>
+        <button ion-button (click)="closeModal()"><ion-icon name="close"></ion-icon></button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -17,19 +20,21 @@
   
   <form>
     <p>Add to an existing list</p>
-    <select name="lists" id="wgtmsr" size = "1">
+    <select name="lists" id="lists" size = "1" class="dropdown">
         <option value="family">Family</option>
         <option value="school">School</option>
         <option value="home">Home</option>
         <option value="personal">Personal</option>
     </select>
-    <br><br>
+    <br>
 
     <p>OR</p>
-    <br>
+    
     <p>Create a new list</p>
-      <input type="text" name="listName" value="List Name"><br>
+      <input type="text" name="listName" class="newlist" id="lists" value="List Name"><br>
     </form>
     <br>
-    <button ion-button (click)="closeModal()">Add</button>
+    <div class="wrapper">
+      <button ion-button class="addbutton" (click)="closeModal()"><ion-icon name="add"></ion-icon><p> Add</p></button>
+    </div>
 </ion-content>

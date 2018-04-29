@@ -1,16 +1,16 @@
 
 page-wish {
-    #wgtmsr{
-        width:90vw;   
+       #lists{
+        width:80vw;   
        }
     
-       #wgtmsr option{
-        width:90vw;   
-      }
+       #lists option{
+        width:80vw;   
+       }
     
       .styled-select select {
         background: transparent;
-        width: 268px;
+        width: 228px;
         padding: 5px;
         font-size: 16px;
         line-height: 1;
@@ -18,5 +18,23 @@ page-wish {
         border-radius: 0.5;
         height: 34px;
         -webkit-appearance: none;
+        }
+        .wrapper {
+            text-align: center;
+        }
+        
+        .addbutton {
+            position: absolute;
+            left: 28%;
+            color: #FFFFFF;
+            background-color:	#20B2AA;
+            width: 43vw;
+            height: 9vw;
+        }
+        .dropdown {
+            height: 9vw;
+        }
+        .newlist {
+            height: 9vw;
         }
 }
